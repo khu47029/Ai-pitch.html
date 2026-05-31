@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Pitch Generator — Pragati Sahayak</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <div class="logo-pip"></div>
+    Pragati Sahayak
+  </div>
+
+  <div class="header-right">
+    <button id="themeToggle">🌙</button>
+    <span class="hbadge">AI PITCH GENERATOR</span>
+  </div>
+</header>
+
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-tag">⚡ Powered by AI</div>
+
+    <h1>
+      Client Details Do,<br>
+      Instant Pitch Lo
+    </h1>
+
+    <p class="hero-sub">
+      AI powered pitch generator for WhatsApp, Instagram, LinkedIn & Email outreach.
+    </p>
+  </div>
+
+  <div class="grid">
+
+    <!-- LEFT -->
+    <div class="panel">
+
+      <div class="panel-title">
+        📋 Client Details
+      </div>
+
+      <div class="panel-sub">
+        ENTER DETAILS → GENERATE AI SCRIPT
+      </div>
+
+      <div class="field">
+        <label class="label">Business Name *</label>
+        <input type="text" class="input" id="bizName" placeholder="Sharma Salon">
+      </div>
+
+      <div class="field">
+        <label class="label">City *</label>
+        <input type="text" class="input" id="bizCity" placeholder="Delhi">
+      </div>
+
+      <div class="field">
+        <label class="label">Business Type *</label>
+
+        <select id="bizType" class="select">
+          <option value="">Select</option>
+          <option value="salon">Salon</option>
+          <option value="restaurant">Restaurant</option>
+          <option value="gym">Gym</option>
+          <option value="clinic">Clinic</option>
+          <option value="shop">Shop</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label">Extra Details</label>
+
+        <textarea id="extraInfo" class="textarea" placeholder="Instagram followers, Google rating etc..."></textarea>
+      </div>
+
+      <button class="gen-btn" onclick="generatePitch()">
+        ⚡ Generate AI Pitch
+      </button>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="out-panel">
+
+      <div class="out-header">
+
+        <div class="out-title">
+          ✨ Generated Script
+        </div>
+
+        <button class="copy-all" onclick="copyAll()">
+          📋 Copy
+        </button>
+
+      </div>
+
+      <div id="output" class="output">
+
+        <div class="empty">
+          Your AI generated pitch will appear here...
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
